@@ -31,10 +31,17 @@ const MainPage = () => {
             <h1>{input}</h1>
             <input type="text" onChange={handleChange}/>
             <Input type={'password'} onChange={handleChange} placeholder={'Введите текст'}/>
-            {/*<Count/>*/}
-            {/*<h1>MainPage</h1>*/}
-            {/*<div>Show</div>*/}
-            {/*<button onClick={handleShow}>Открыть</button>*/}
+            <Count/>
+            <h1>MainPage</h1>
+            <div>Show</div>
+
+            <Button name={'Открыть'} onClick={handleShow}/>
+            <div>
+                <h2>Buttons HW</h2>
+                <Button name={'Save'} color={'green'}/>
+                <Button name={'Delete'} color={'red'}/>
+                <Button name={'Edit'} color={'blue'}/>
+            </div>
             {/*{*/}
             {/*    show && <div style={{backgroundColor: "red"}}>Модальное окно</div>*/}
             {/*}*/}
