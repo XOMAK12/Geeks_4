@@ -1,15 +1,16 @@
 import React from 'react';
 import classes from './Modal.module.css';
-import Button from "../button/Button";
+
 
 const Modal = ({handleShow}) => {
+    console.log(handleShow,'handleShowhandleShow');
     return (
         <>
-            <div className={classes.modalWrapper}/>
-            <div className={classes.modalContent}>
-                <Button name={'Закрыть'} onClick={handleShow}/>
-                <h1>Modal</h1>
-            </div>
+         <div className={classes.modalWrapper}/>
+         <div className={classes.modalContent}>
+             <button onClick={handleShow}>Закрыть</button>
+             <h1>Modal</h1>
+         </div>
         </>
     );
 };

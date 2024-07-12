@@ -1,9 +1,15 @@
 import React from 'react';
-import classes from './button.module.css'
+import classes from './button.module.css';
 
-const Button = ({name, onClick, color}) => {
+
+export const Button2 = ({name}) => {
     return (
-        <button onClick={onClick} className={classes[color]}>{name}</button>
+     <button className={classes.btn}>{name}</button>
+    );
+};
+const Button = ({name}) => {
+    return (
+     <button className={classes.btn}>{name}</button>
     );
 };
 
