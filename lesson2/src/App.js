@@ -1,5 +1,4 @@
 import './App.css';
-import MainPage from './page/mainPage/MainPage';
 
 function App() {
     return (
@@ -7,6 +6,4 @@ function App() {
     );
 }
 
-
 export default App;
-

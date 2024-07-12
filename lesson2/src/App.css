@@ -7,17 +7,10 @@
 .App {
   text-align: center;
 }
-.btn {
-  background-color: red;
-}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-.button {
-  background-color: red;
 }
 
 @media (prefers-reduced-motion: no-preference) {
