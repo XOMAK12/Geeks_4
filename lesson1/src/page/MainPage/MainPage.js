@@ -1,8 +1,7 @@
 import React from 'react';
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import User from "../../components/user/User";
-import Car from "../../components/car/Car";
+import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
+import User from '../../components/user/User';
 
 
 const MainPage = () => {
@@ -10,8 +9,7 @@ const MainPage = () => {
         <div>
             <Header/>
             <h1>MainPage</h1>
-            <User name={'Nikita'} age={18} email={'nikita@gmail.com'} />
-            <Car car={'Audi'} />
+            <User name={'Bakyt'} age={18} email={'baktybeks@mail.ru'}/>
             <Footer/>
         </div>
     );

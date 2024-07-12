@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Title = ({name}) => {
     return (
         <h1>
