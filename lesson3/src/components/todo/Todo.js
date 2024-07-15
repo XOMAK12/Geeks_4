@@ -5,7 +5,7 @@ import Button from '../button/Button';
 
 const Todo = ({ todo, handleDelete, handleEdit, handleDone}) => {
     return (
-        <li className={classes.li}>
+        <li className={`${classes.li} ${todo.complete && classes.done}`}>
             <div className={classes.info}>
                 <p>{todo.id}</p>
                 <p>{todo.title}</p>
