@@ -15,3 +15,7 @@
     display: flex;
     gap: 20px;
 }
+.done {
+    background-color: green;
+    text-decoration: line-through;
+}
