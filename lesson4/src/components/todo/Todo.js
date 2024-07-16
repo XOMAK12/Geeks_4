@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import classes from './Todo.module.css';
 import Button from '../button/Button';
 
-
 const Todo = ({
     todo,
     handleDelete,
@@ -12,6 +11,16 @@ const Todo = ({
     isEdit
 }) => {
     const [input, setInput] = useState(todo.title);
+
+    const saveEdit = () => {
+        handleEdit({ ...todo, title: input });
+        handleCurrentEdit('');
+    };
+
+    const cancelEdit = () => {
+        handleCurrentEdit('');
+        setInput(todo.title);
+    };
     return (
         <>
             <li className={`${classes.li} ${todo.complete && classes.done}`}>
@@ -32,14 +41,8 @@ const Todo = ({
                         value={input}
                     onChange={event => setInput(event.target.value)}
                     />
-                    <button onClick={() => {
-                        handleEdit(
-                            {
-                                ...todo, title: input
-                            }
-                        )
-                    }}>save</button>
-                    <button>cancel</button>
+                    <button onClick={saveEdit}>save</button>
+                    <button onClick={cancelEdit}>cancel</button>
                 </div>
             }
         </>
