@@ -7,8 +7,7 @@ const TodoList = ({ todoList, handleDelete, handleEdit, handleDone }) => {
     const [currentEdit, setCurrentEdit] = useState('');
     return (
         <ul className={classes.ul}>
-            {
-                todoList.map(todo => <Todo
+            {todoList.map(todo => <Todo
                     key={todo.id}
                     todo={todo}
                     handleDelete={handleDelete}
