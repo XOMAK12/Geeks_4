@@ -16,7 +16,7 @@ const PokemonCard = ({ pokemon }) => {
     }, []);
 
     if (!pokemonDetails) {
-        return <p>Loading...</p>;
+        return <p className={classes.pokemonCard}>Loading...</p>;
     }
 
     return (
